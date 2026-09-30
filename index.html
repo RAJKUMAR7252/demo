@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Bail Pola</title>
+    <style>
+        :root {
+            --primary: #d97706;
+            --primary-dark: #b45309;
+            --bg-color: #fffbe2;
+            --card-bg: #ffffff;
+            --text-main: #292524;
+            --accent-green: #15803d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            max-width: 600px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border: 3px solid var(--primary);
+            text-align: center;
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, var(--primary), #f59e0b);
+            color: white;
+            padding: 30px 20px;
+        }
+
+        .header-banner h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .header-banner p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px 20px;
+        }
+
+        .bull-illustration {
+            font-size: 5rem;
+            margin: 15px 0;
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+
+        .wishes {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #44403c;
+            margin-bottom: 25px;
+        }
+
+        .marathi-text {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--accent-green);
+            margin-top: 15px;
+        }
+
+        .btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(217, 119, 6, 0.3);
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #f5f5f4;
+            padding: 15px;
+            font-size: 0.85rem;
+            color: #78716c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header-banner">
+            <h1>Happy Bail Pola!</h1>
+            <p>Celebrating the Spirit of Farmers & Cattle</p>
+        </div>
+
+        <div class="content">
+            <div class="bull-illustration">🐂🌾</div>
+
+            <div class="wishes">
+                <p>On this auspicious occasion of <strong>Bail Pola</strong>, let us express our heartfelt gratitude to the hard-working bulls and farmers who nourish our land and sustain our lives.</p>
+                
+                <p class="marathi-text">बैलपोळ्याच्या हार्दिक शुभेच्छा!</p>
+            </div>
+
+            <button class="btn" onclick="showGreeting()">Send Blessings</button>
+        </div>
+
+        <footer>
+            Wishing you peace, prosperity, and joy on Pola.
+        </footer>
+    </div>
+
+    <script>
+        function showGreeting() {
+            alert("🌾 May your home be blessed with prosperity, health, and a bountiful harvest. Happy Bail Pola! 🐂");
+        }
+    </script>
+
+</body>
+</html>
