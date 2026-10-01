@@ -1,11 +1,199 @@
-def happy_dussehra():
-    message = """
-    ✨ ════════════════════════════════════════ ✨
-             🏹 HAPPY DUSSEHRA! 🏹
-       May the good in you always triumph
-                over the evil.
-    ✨ ════════════════════════════════════════ ✨
-    """
-    print(message)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Gandhi Jayanti</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-happy_dussehra()
+    body {
+      background-color: #fdfbf7;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      border-top: 6px solid #e67e22;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+      background: #fff8f0;
+    }
+
+    h1 {
+      color: #d35400;
+      font-size: 2.2rem;
+      margin-bottom: 5px;
+    }
+
+    .date {
+      color: #27ae60;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .subtitle {
+      color: #7f8c8d;
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+
+    .content {
+      padding: 25px 20px;
+    }
+
+    .quote-box {
+      background: #fdf3e7;
+      border-left: 4px solid #e67e22;
+      padding: 15px;
+      border-radius: 4px;
+      margin-bottom: 25px;
+      font-style: italic;
+      text-align: center;
+    }
+
+    .quote-author {
+      display: block;
+      margin-top: 8px;
+      font-weight: bold;
+      font-style: normal;
+      color: #2c3e50;
+    }
+
+    h2 {
+      color: #2c3e50;
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-bottom: 25px;
+    }
+
+    li {
+      padding: 8px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    li::before {
+      content: "•";
+      color: #e67e22;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+
+    .tribute-section {
+      text-align: center;
+      padding: 20px;
+      background: #fdfbf7;
+      border-radius: 8px;
+      border: 1px dashed #dcdde1;
+    }
+
+    .btn {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #219150;
+    }
+
+    .diya {
+      font-size: 2.5rem;
+      display: block;
+      margin-top: 10px;
+      opacity: 0.3;
+      transition: opacity 0.5s, transform 0.5s;
+    }
+
+    .diya.lit {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.85rem;
+      color: #95a5a6;
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Happy Gandhi Jayanti</h1>
+      <p class="date">October 2nd</p>
+      <p class="subtitle">International Day of Non-Violence</p>
+    </header>
+
+    <div class="content">
+      <div class="quote-box">
+        "Be the change that you wish to see in the world."
+        <span class="quote-author">- Mahatma Gandhi</span>
+      </div>
+
+      <h2>Core Values & Teachings</h2>
+      <ul>
+        <li><strong>Ahimsa (Non-Violence):</strong> Resolving conflicts with peace and understanding.</li>
+        <li><strong>Satya (Truth):</strong> Living truthfully and standing up for honesty.</li>
+        <li><strong>Swaraj (Self-Reliance):</strong> Empowering communities through self-sufficiency.</li>
+        <li><strong>Satyagraha (Truth Force):</strong> Passive resistance for social justice.</li>
+      </ul>
+
+      <div class="tribute-section">
+        <h3>Pay Virtual Respects</h3>
+        <p>Click below to light a digital lamp in honor of Mahatma Gandhi.</p>
+        <button class="btn" onclick="lightDiya()">Light a Diya</button>
+        <span id="diya" class="diya">🪔</span>
+        <p id="tribute-msg" style="margin-top: 8px; font-weight: bold; color: #d35400;"></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Remembering the Father of the Nation, Mahatma Gandhi.</p>
+    </footer>
+  </div>
+
+  <script>
+    function lightDiya() {
+      const diya = document.getElementById('diya');
+      const msg = document.getElementById('tribute-msg');
+      
+      diya.classList.add('lit');
+      msg.textContent = "Thank you for paying tribute!";
+    }
+  </script>
+
+</body>
+</html>
